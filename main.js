@@ -6,4 +6,4 @@ while (true) {
     camera.getAttribute('rotation');
     camera.setAttribute('rotation', {x: i});
     i++;
-}
+};
