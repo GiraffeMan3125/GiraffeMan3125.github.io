@@ -1,9 +1,11 @@
-var camera = document.querySelector('a-entity[camera]').components.camera.camera;
+var camera = document.querySelector('#camera')
 
-camera.setAttribute('reverseMouseDrag', true);
+camera.setAttribute('look-controls', 'reverseMouseDrag', true);
+
+var a = 0
 
 while (true) {
-    camera.getAttribute('scale');
-    camera.setAttribute('scale', {x: i});
-    i++;
+    camXScale = camera.getAttribute('scale');
+    camera.setAttribute('scale', (a + camXScale) 1 1);
+    a++;
 };
