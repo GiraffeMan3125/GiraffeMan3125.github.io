@@ -1,4 +1,4 @@
-AFRAME.registerComponent('scaleGoBrr', {
+AFRAME.registerComponent('hahafunny', {
     tick: function () {
         // `this.el` is the element.
         // `object3D` is the three.js object.
@@ -11,3 +11,11 @@ AFRAME.registerComponent('scaleGoBrr', {
         this.el.object3D.scale.x = this.el.object3D.scale.x - 0.1
     }
   });
+
+  AFRAME.registerComponent('moveOnClick', {
+      tick: function () {
+        this.el.addEventListener('click', function () {
+            this.el.object3D.scale.x = 300
+          });
+      }
+  })
