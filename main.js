@@ -1,9 +1,3 @@
-// Old Unworking Code
-// while (true) {
-//     camXScale = camera.getAttribute('scale');
-//     camera.setAttribute('scale', {x: (1 + camXScale)});
-// };
-
 AFRAME.registerComponent('scaleGoBrr', {
     tick: function () {
         // `this.el` is the element.
@@ -14,6 +8,6 @@ AFRAME.registerComponent('scaleGoBrr', {
     
         //   `position` is a three.js Vector3.
         //   console.log(this.el.object3D.position);
-        this.el.object3D.scale.x = this.el.object3D.scale.x - 1
+        this.el.object3D.scale.x = this.el.object3D.scale.x - 0.001
     }
   });
