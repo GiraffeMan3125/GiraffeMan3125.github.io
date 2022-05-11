@@ -14,6 +14,6 @@ AFRAME.registerComponent('scaleGoBrr', {
     
         //   `position` is a three.js Vector3.
         //   console.log(this.el.object3D.position);
-        this.el.object3D.scale = this.el.object3D.scale - 1
+        this.el.object3D.scale.x = this.el.object3D.scale.x - 1
     }
   });
