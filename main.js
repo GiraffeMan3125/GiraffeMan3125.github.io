@@ -15,7 +15,7 @@ AFRAME.registerComponent('hahafunny', {
   AFRAME.registerComponent('moveOnClick', {
       tick: function () {
         this.el.addEventListener('click', function () {
-            this.el.object3D.scale.x = 300
+            this.el.object3D.scale.z = 300
           });
       }
   })
