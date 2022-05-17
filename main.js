@@ -12,10 +12,11 @@ AFRAME.registerComponent('hahafunny', {
     }
   });
 
-  AFRAME.registerComponent('moveOnClick', {
-      tick: function () {
-        this.el.addEventListener('click', function () {
-            this.el.object3D.scale.z = 300
-          });
-      }
-  })
+AFRAME.registerComponent('moveOnClick', {
+    init: function () {
+    var el = this.el;        
+    el.addEventListener('click', function () {            
+        el.object3D.scale.z = 200
+    });        
+    }
+});
