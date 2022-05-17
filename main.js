@@ -9,7 +9,7 @@ function sleep(milliseconds) {
 }
   
 
-AFRAME.registerComponent('', {
+AFRAME.registerComponent('cets', {
     play: function () {
          while (True) {
             console.log("test")
