@@ -10,11 +10,11 @@ function sleep(milliseconds) {
   
 
 AFRAME.registerComponent('cets', {
-    play: function () {
+    init: function () {
          while (True) {
-            console.log("test")
-            this.el.object3D.position.x += 1
-            sleep(500)
+            console.log("test");
+            this.el.object3D.position.x += 1;
+            sleep(500);
          }
 
     }
