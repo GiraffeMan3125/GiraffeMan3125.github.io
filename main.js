@@ -16,7 +16,7 @@ AFRAME.registerComponent('moveOnClick', {
     init: function () {
     var el = this.el;        
     el.addEventListener('click', function () {            
-        el.object3D.scale.x = 200
+        el.object3D.scale.x = 2000000
     });        
     }
 });
