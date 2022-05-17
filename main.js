@@ -12,11 +12,12 @@ AFRAME.registerComponent('hahafunny', {
     }
   });
 
-AFRAME.registerComponent('moveOnClick', {
+AFRAME.registerComponent('moveonclick', {
     init: function () {
     var el = this.el;        
-    el.addEventListener('click', function () {            
-        el.object3D.scale.x = 2000000
+    el.addEventListener('click', function () {   
+        console.log("test")         
+        el.object3D.scale = '5624 943015 648392'
     });        
     }
 });
