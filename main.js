@@ -1,3 +1,5 @@
+// WHY WONT MY CODE WORK AAAAA
+
 function sleep(milliseconds) {
     const date = Date.now();
     let currentDate = null;
@@ -7,7 +9,7 @@ function sleep(milliseconds) {
 }
   
 
-AFRAME.registerComponent('cets', {
+AFRAME.registerComponent('', {
     play: function () {
          while (True) {
             console.log("test")
