@@ -21,8 +21,6 @@ async function loopychangetextboy() {
 
 AFRAME.registerComponent("cets", {
     init: function () {
-        while (True) {
-            loopychangetextboy();
-        }
+        loopychangetextboy();
     }
 });
