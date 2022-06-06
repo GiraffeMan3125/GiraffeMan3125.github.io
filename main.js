@@ -8,8 +8,8 @@ const words = [
 var i = 1;                  //  set your counter to 1
 
 function loopychangetextboy() {
-  setTimeout(function() {
-    console.log("test");
+    await new Promise(r => setTimeout(r, 2000));
+    alert("test")
     while (this.opa > 0) {
         this.opacity - 0.05;
     }
@@ -17,10 +17,7 @@ function loopychangetextboy() {
     if (i < words.length) {
         loopychangetextboy();
     }
-  }, 500)
 }
-
-loopychangetextboy();
 
 AFRAME.registerComponent("cets", {
     init: function () {
