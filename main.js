@@ -8,7 +8,7 @@ const words = [
 var i = 1;                  //  set your counter to 1
 
 async function loopychangetextboy() {
-    await new Promise(r => setTimeout(r, 2000));
+    await new Promise(r => setTimeout(r, 5000));
     alert("test")
     while (this.opa > 0) {
         this.opacity - 0.05;
