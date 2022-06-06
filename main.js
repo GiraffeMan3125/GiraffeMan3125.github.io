@@ -11,7 +11,12 @@ async function loopychangetextboy() {
     await new Promise(r => setTimeout(r, 5000));
     alert("test")
     while (this.opa > 0) {
-        this.opacity - 0.05;
+        this.opacity = this.opacity - 0.05;
+    }
+    i++;
+    this.value = words[i];
+    while (this.opa < 1) {
+        this.opacity = this.opacity + 0.05;
     }
     i++;
     if (i < words.length) {
