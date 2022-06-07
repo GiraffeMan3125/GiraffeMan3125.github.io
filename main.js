@@ -7,12 +7,12 @@ var i = 1;
 
 async function loopychangetextboy() {
     await new Promise(r => setTimeout(r, 5000));
-    alert(this.opacity)
+    alert(this.el.value)
     // while (this.opacity > 0) {
     //     this.opacity = this.opacity - 0.05;
     // }
     i++;
-    this.text.value = words[i];
+    this.el.value = words[i];
     // while (this.opacity < 1) {
     //     this.opacity = this.opacity + 0.05;
     // }
