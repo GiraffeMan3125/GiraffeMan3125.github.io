@@ -1,11 +1,9 @@
-// WHY WONT MY CODE WORK AAAAA
-
 const words = [
     "Virtual Reality, and it's use\n in treating Mental Illness", 
     "I need a second line of words\n to make sure this works.",
     "A 3rd line is always nice."
 ]
-var i = 1;                  //  set your counter to 1
+var i = 1;
 
 async function loopychangetextboy() {
     await new Promise(r => setTimeout(r, 5000));
