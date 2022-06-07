@@ -7,15 +7,15 @@ var i = 1;
 
 async function loopychangetextboy() {
     await new Promise(r => setTimeout(r, 5000));
-    alert(this.el.value)
-    // while (this.opacity > 0) {
-    //     this.opacity = this.opacity - 0.05;
-    // }
+    alert(this.el.getAttribute('text').opacity)
+    while (this.el.getAttribute('text').opacity > 0) {
+       this.el.setAttribute('text', 'opacity', (this.el.getAttribute('text').opacity - 0.05));
+    }
     i++;
-    this.el.value = words[i];
-    // while (this.opacity < 1) {
-    //     this.opacity = this.opacity + 0.05;
-    // }
+    this.el.setAttribute('text', 'value', words[i]);
+    while (this.el.getAttribute('text').opacity < 1) {
+        this.el.setAttribute('text', 'opacity', (this.el.getAttribute('text').opacity + 0.05));
+    }
     if (i < words.length) {
         loopychangetextboy();
     }
@@ -23,6 +23,6 @@ async function loopychangetextboy() {
 
 AFRAME.registerComponent("cets", {
     init: function () {
-        loopychangetextboy();
+        loopychangetextboy(e);
     }
 });
