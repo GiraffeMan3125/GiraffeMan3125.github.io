@@ -9,7 +9,7 @@ var i = 1;                  //  set your counter to 1
 
 async function loopychangetextboy() {
     await new Promise(r => setTimeout(r, 5000));
-    alert("test")
+    alert("test");
     while (this.opacity > 0) {
         this.opacity = this.opacity - 0.05;
     }
