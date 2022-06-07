@@ -7,7 +7,7 @@ var i = 1;
 
 async function loopychangetextboy() {
     await new Promise(r => setTimeout(r, 5000));
-    alert(this.el.getAttribute('text').opacity)
+    alert(this.el.getAttribute('text').opacity);
     while (this.el.getAttribute('text').opacity > 0) {
        this.el.setAttribute('text', 'opacity', (this.el.getAttribute('text').opacity - 0.05));
     }
