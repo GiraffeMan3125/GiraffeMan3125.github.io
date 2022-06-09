@@ -1,4 +1,4 @@
-var text = document.querySelector("#maintext"),
+var scene = document.querySelector('a-scene'),
 i = 1;
 const words = [
     "Virtual Reality, and it's use\n in treating Mental Illness", 
@@ -7,6 +7,7 @@ const words = [
 ];
 
 async function main() {
+    var text = document.querySelector("#maintext")
     alert("changing");
     text.setAttribute("text", "value", "a");
 //     while (i < words.length) {
