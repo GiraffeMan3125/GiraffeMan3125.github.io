@@ -9,7 +9,7 @@ const words = [
 if (scene.hasLoaded) {
     main();
 } else {
-    scene.addEventListener('loaded', main);
+    scene.addEventListener("load", main);
 };
 
 function main() {
