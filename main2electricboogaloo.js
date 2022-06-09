@@ -6,8 +6,14 @@ const words = [
     "A 3rd line is always nice."
 ];
 
-async function main() {
-    var text = document.querySelector("#maintext")
+if (scene.hasLoaded) {
+    main();
+} else {
+    scene.addEventListener('loaded', main);
+};
+
+function main() {
+    var text = scene.querySelector("#maintext");
     alert("changing");
     text.setAttribute("text", "value", "a");
 //     while (i < words.length) {
@@ -15,10 +21,4 @@ async function main() {
 //         console.log(text.getAttribute("text").value);
 //         i++;
 //     };
-};
-
-if (scene.hasLoaded) {
-    main();
-} else {
-    scene.addEventListener('loaded', main);
 };
