@@ -8,5 +8,6 @@ const words = [
 
 while (i < words.length) {
     await new Promise(r => setTimeout(r, 5000));
-    alert(text.getAttribute("text").value)
+    // alert(text.getAttribute("text").value);
+    alert("test");
 }
