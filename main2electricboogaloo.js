@@ -6,6 +6,7 @@ const words = [
     "A 3rd line is always nice."
 ];
 
+console.log("here");
 async function main() {
     while (i < words.length) {
         await new Promise(r => setTimeout(r, 5000));
