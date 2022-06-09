@@ -8,14 +8,14 @@ var i = 1;
 async function loopychangetextboy() {
     await new Promise(r => setTimeout(r, 5000));
     alert(this.el.getAttribute('text').opacity);
-    while (this.el.getAttribute('text').opacity > 0) {
-       this.el.setAttribute('text', 'opacity', (this.el.getAttribute('text').opacity - 0.05));
-    }
+    // while (this.el.getAttribute('text').opacity > 0) {
+    //    this.el.setAttribute('text', 'opacity', (this.el.getAttribute('text').opacity - 0.05));
+    // }
     i++;
     this.el.setAttribute('text', 'value', words[i]);
-    while (this.el.getAttribute('text').opacity < 1) {
-        this.el.setAttribute('text', 'opacity', (this.el.getAttribute('text').opacity + 0.05));
-    }
+    // while (this.el.getAttribute('text').opacity < 1) {
+    //     this.el.setAttribute('text', 'opacity', (this.el.getAttribute('text').opacity + 0.05));
+    // }
     if (i < words.length) {
         loopychangetextboy();
     }
