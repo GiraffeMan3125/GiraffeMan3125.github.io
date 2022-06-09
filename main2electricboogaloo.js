@@ -7,11 +7,13 @@ const words = [
 ];
 
 async function main() {
-    while (i < words.length) {
-        await new Promise(r => setTimeout(r, 5000));
-        console.log(text.getAttribute("text").value);
-        i++;
-    };
+    alert("changing");
+    text.setAttribute("text", "value", "a");
+//     while (i < words.length) {
+//         await new Promise(r => setTimeout(r, 5000));
+//         console.log(text.getAttribute("text").value);
+//         i++;
+//     };
 };
 
 main();
