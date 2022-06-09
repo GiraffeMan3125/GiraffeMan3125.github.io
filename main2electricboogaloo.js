@@ -14,8 +14,8 @@ if (scene.hasLoaded) {
 };
 
 function run() {
+    alert("ran");
     var text = scene.querySelector("#maintext");
-    alert("changing");
     text.setAttribute("text", "value", "a");
 //     while (i < words.length) {
 //         await new Promise(r => setTimeout(r, 5000));
@@ -23,7 +23,3 @@ function run() {
 //         i++;
 //     };
 };
-
-function color() {
-
-}
