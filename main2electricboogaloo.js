@@ -1,4 +1,4 @@
-var text = document.querySelector("maintext"),
+var text = document.querySelector("#maintext"),
 i = 1;
 const words = [
     "Virtual Reality, and it's use\n in treating Mental Illness", 
