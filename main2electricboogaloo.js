@@ -16,4 +16,8 @@ async function main() {
 //     };
 };
 
-main();
+if (scene.hasLoaded) {
+    main();
+} else {
+    scene.addEventListener('loaded', main);
+};
