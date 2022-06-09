@@ -6,12 +6,11 @@ const words = [
     "A 3rd line is always nice."
 ];
 
-console.log("here");
 async function main() {
     while (i < words.length) {
         await new Promise(r => setTimeout(r, 5000));
-        // alert(text.getAttribute("text").value);
-        console.log("test");
+        console.log(text.getAttribute("text").value);
+        i++;
     };
 };
 
