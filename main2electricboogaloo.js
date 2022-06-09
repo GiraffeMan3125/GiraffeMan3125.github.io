@@ -15,7 +15,7 @@ if (scene.hasLoaded) {
 
 function run() {
     alert("ran");
-    var text = scene.querySelector("#maintext");
+    var text = scene.querySelector("#words");
     text.setAttribute("text", "value", "a");
 //     while (i < words.length) {
 //         await new Promise(r => setTimeout(r, 5000));
