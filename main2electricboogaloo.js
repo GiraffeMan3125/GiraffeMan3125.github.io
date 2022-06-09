@@ -10,7 +10,7 @@ alert("rjkadf");
 if (scene.hasLoaded) {
     run();
 } else {
-    scene.addEventListener("load", run);
+    scene.addEventListener("loaded", run);
 };
 
 function run() {
@@ -23,3 +23,7 @@ function run() {
 //         i++;
 //     };
 };
+
+function color() {
+
+}
