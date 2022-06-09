@@ -6,13 +6,14 @@ const words = [
     "A 3rd line is always nice."
 ];
 
+alert("rjkadf");
 if (scene.hasLoaded) {
-    main();
+    run();
 } else {
-    scene.addEventListener("load", main);
+    scene.addEventListener("load", run);
 };
 
-function main() {
+function run() {
     var text = scene.querySelector("#maintext");
     alert("changing");
     text.setAttribute("text", "value", "a");
