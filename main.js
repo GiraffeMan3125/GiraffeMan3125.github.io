@@ -23,6 +23,6 @@ async function loopychangetextboy() {
 
 AFRAME.registerComponent("cets", {
     init: function () {
-        loopychangetextboy(e);
+        loopychangetextboy();
     }
 });
