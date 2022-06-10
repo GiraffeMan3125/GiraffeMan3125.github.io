@@ -15,7 +15,9 @@ AFRAME.registerComponent('maincomp', {
 function run() {
     alert("ran");
     var text = scene.querySelector("#words");
+    alert("got text object");
     text.setAttribute("text", "value", "a");
+    alert("changed text");
 //     while (i < words.length) {
 //         await new Promise(r => setTimeout(r, 5000));
 //         console.log(text.getAttribute("text").value);
