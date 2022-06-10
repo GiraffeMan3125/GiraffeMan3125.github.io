@@ -1,4 +1,5 @@
 var scene = document.querySelector('a-scene'),
+text = scene.querySelector("#words");
 i = 1;
 const words = [
     "Virtual Reality, and it's use\n in treating Mental Illness", 
@@ -14,8 +15,6 @@ AFRAME.registerComponent('maincomp', {
 
 function run() {
     alert("ran");
-    var text = scene.querySelector("#words");
-    alert("got text object");
     text.setAttribute("text", "value", "a");
     alert("changed text");
 //     while (i < words.length) {
