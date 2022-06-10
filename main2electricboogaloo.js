@@ -15,7 +15,8 @@ AFRAME.registerComponent('maincomp', {
 
 function run() {
     alert("ran");
-    text.setAttribute("text", "value", "a");
+    text.setAttribute('text', {value: 'a'});
+    // entityEl.setAttribute('light', {color: '#ACC', intensity: 0.75});
     alert("changed text");
 //     while (i < words.length) {
 //         await new Promise(r => setTimeout(r, 5000));
