@@ -7,6 +7,8 @@ const words = [
     "A 3rd line is always nice."
 ];
 
+alert("script is running");
+
 AFRAME.registerComponent('maincomp', {
     init: function () {
         alert("ran");
