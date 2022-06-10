@@ -6,7 +6,6 @@ const words = [
     "A 3rd line is always nice."
 ];
 
-alert("rjkadf");
 if (scene.hasLoaded) {
     run();
 } else {
