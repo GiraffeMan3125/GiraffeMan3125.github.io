@@ -6,11 +6,11 @@ const words = [
     "A 3rd line is always nice."
 ];
 
-if (scene.hasLoaded) {
+AFRAME.registerComponent('maincomp', {
+  init: function () {
     run();
-} else {
-    scene.addEventListener("loaded", run());
-};
+  }
+});
 
 function run() {
     alert("ran");
