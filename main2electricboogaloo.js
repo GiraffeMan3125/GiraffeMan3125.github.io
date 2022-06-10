@@ -10,7 +10,7 @@ const words = [
 AFRAME.registerComponent('maincomp', {
     init: function () {
         alert("ran");
-        this.el.setAttribute("text", "value", "a");
+        // this.el.setAttribute("text", "value", "a");
         // while (i < words.length) {
         //     await new Promise(r => setTimeout(r, 5000));
         //     i++;
