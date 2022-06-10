@@ -8,19 +8,13 @@ const words = [
 ];
 
 AFRAME.registerComponent('maincomp', {
-  init: function () {
-    run();
-  }
+    init: function () {
+        alert("ran");
+        this.el.setAttribute("text", "value", "a");
+        // while (i < words.length) {
+        //     await new Promise(r => setTimeout(r, 5000));
+        //     i++;
+        // }
+    }
 });
 
-function run() {
-    alert("ran");
-    // text.setAttribute('text', 'value', 'a');
-    // entityEl.setAttribute('light', {color: '#ACC', intensity: 0.75});
-    // alert("changed text");
-//     while (i < words.length) {
-//         await new Promise(r => setTimeout(r, 5000));
-//         console.log(text.getAttribute("text").value);
-//         i++;
-//     };
-};
