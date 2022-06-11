@@ -19,4 +19,3 @@ AFRAME.registerComponent('maincomp', {
         // }
     }
 });
-

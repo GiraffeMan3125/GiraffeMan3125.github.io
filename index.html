@@ -4,7 +4,29 @@
     <title>thingy</title>
   </head>
   <body>
-    <script src="main2.js"></script>
+    <script>
+      var scene = document.querySelector('a-scene'),
+      text = scene.querySelector("#words");
+      i = 1;
+      const words = [
+        "Virtual Reality, and it's use\n in treating Mental Illness", 
+        "I need a second line of words\n to make sure this works.",
+        "A 3rd line is always nice."
+      ];
+
+      alert("script is running");
+
+      AFRAME.registerComponent('maincomp', {
+        init: function () {
+          alert("ran");
+          // this.el.setAttribute("text", "value", "a");
+          // while (i < words.length) {
+          //     await new Promise(r => setTimeout(r, 5000));
+          //     i++;
+          // }
+        }
+      });
+    </script>
     <a-scene>
       <a-sky color="#1A1826"></a-sky>
       <a-entity id="words" text="value: Virtual Reality, and it's use\n in treating Mental Illness; align: center; alphaTest: 0; color: #F5E0DC; height: 10; opacity: 1; side: double; width: 18; zOffset: 0" position="0 1.25 -5" rotation="" scale="1 1 20"></a-entity>
